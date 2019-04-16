@@ -3957,6 +3957,7 @@ select.form-control:focus::-ms-value {
 
 .header-block__bot {
   position: absolute;
+  display: none;
   left: 15px;
   bottom: 20px;
   color: #ffffff;
@@ -4166,7 +4167,7 @@ select.form-control:focus::-ms-value {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 260px;
+  max-width: 275px;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4409,7 +4410,7 @@ select.form-control:focus::-ms-value {
   font-weight: 700;
   margin-left: auto;
   margin-right: auto;
-  max-width: 470px;
+  max-width: 520px;
   margin-top: 0.625em;
   margin-bottom: 1.5625em;
 }
@@ -6721,18 +6722,6 @@ a {
     padding-bottom: 100px;
   }
 
-  .header-block .container-fluid {
-    padding-bottom: 70px;
-    padding-top: 10rem;
-  }
-
-  .header-block .container-fluid::after {
-    content: url(../img/Mchs_russia.svg.png);
-    left: 15px;
-    bottom: 40px;
-    position: absolute;
-  }
-
   .header-block {
     background-position: 200px bottom;
   }
@@ -6831,13 +6820,6 @@ a {
 
   .s-form .form-wrap__col {
     margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 992px) and (min-width: 992px) {
-  .header-block .container-fluid::after {
-    right: 15px;
-    left: auto;
   }
 }
 
@@ -7466,6 +7448,32 @@ a {
 
   .footer__logo-col {
     padding-left: 50px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1260px) {
+  .header-block .container-fluid {
+    padding-bottom: 70px;
+    padding-top: 10rem;
+  }
+
+  .header-block .container-fluid::after {
+    content: url(../img/Mchs_russia.svg.png);
+    left: 15px;
+    bottom: 40px;
+    position: absolute;
+  }
+
+  .header-block__bot {
+    display: block;
+  }
+}
+
+@media (min-width: 1260px) and (min-width: 992px) {
+  .header-block .container-fluid::after {
+    right: 15px;
+    left: auto;
   }
 }
 
