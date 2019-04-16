@@ -350,7 +350,7 @@ jQuery(document).ready(function ($) {
 					th.trigger("reset");
 					// $.magnificPopup.close();
 				}, 4000);
-				ym(51692438, 'reachGoal', 'zakaz');
+				ym(51692438, 'reachGoal', 'zakaz_edu');
 			});
 			return false;
 		});
